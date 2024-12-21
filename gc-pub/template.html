@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Netflix Theme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-zinc-950 text-white">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full z-10 bg-black bg-opacity-50 py-4 px-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-red-600">MovieFlix</h1>
+    </header>
+
+    <!-- Carousel -->
+    <section class="relative h-[33rem]">
+      <div class="overflow-hidden h-[33rem]">
+        <img src="https://wallpaperaccess.com/full/242850.jpg" alt="Featured Movie" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute bottom-10 left-10 text-white z-20">
+        <h2 class="text-4xl font-bold">Featured Movie</h2>
+        <p class="mt-2 text-lg">An exciting adventure awaits you!</p>
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-60"></div>
+    </section>
+
+    <!-- Filters -->
+    <section class="py-8 px-6">
+      <div class="flex justify-center gap-4">
+        <select class="px-4 py-2 rounded bg-zinc-700 text-white">
+          <option value="">All Categories</option>
+          <option value="action">Action</option>
+          <option value="drama">Drama</option>
+          <option value="comedy">Comedy</option>
+        </select>
+
+        <input type="text" placeholder="Search movies..." class="px-4 py-2 w-1/2 rounded bg-zinc-700 text-white" />
+
+        <select class="px-4 py-2 rounded bg-zinc-700 text-white">
+          <option value="">Sort by</option>
+          <option value="asc">ASC</option>
+          <option value="desc">DESC</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Movies Grid -->
+    <section class="py-8 px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-zinc-700 p-4 rounded">
+          <img src="https://via.placeholder.com/300x400" alt="Movie Poster" class="w-full h-60 object-cover rounded" />
+          <h3 class="mt-4 text-lg font-bold">Movie Title</h3>
+          <p class="mt-2 text-sm">Short description of the movie.</p>
+        </div>
+        <!-- Repeat this block for more movies -->
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="py-4 flex justify-center items-center gap-4">
+      <button class="px-4 py-2 bg-zinc-700 rounded disabled:opacity-50">Prev</button>
+      <div class="flex gap-1">
+        <button class="w-10 h-10 flex items-center justify-center bg-zinc-700 rounded">1</button>
+        <button class="w-10 h-10 flex items-center justify-center bg-zinc-700 rounded">2</button>
+        <button class="w-10 h-10 flex items-center justify-center bg-zinc-700 rounded">3</button>
+      </div>
+      <button class="px-4 py-2 bg-zinc-700 rounded disabled:opacity-50">Next</button>
+    </section>
+
+    <div class="flex justify-evenly">
+        <img src="https://via.placeholder.com/300x400" alt="Movie Poster" class="h-[30rem] object-cover rounded" />
+        <h1>title</h1>
+        <h5>synopsis</h5>
+        <p>trailer:</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-700 py-6 text-center">
+      <p class="text-sm">&copy; 2024 MovieFlix. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
